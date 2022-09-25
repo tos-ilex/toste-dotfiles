@@ -13,9 +13,9 @@ general {
 }
 
 #order += "ipv6"
-#order += "wireless _first_"
-#order += "ethernet _first_"
-#order += "battery all"
+order += "wireless _first_"
+order += "ethernet _first_"
+order += "battery all"
 order += "disk /"
 order += "cpu_usage"
 #order += "load"
@@ -41,7 +41,7 @@ disk "/" {
 }
 
 cpu_usage {
-	format = "CPU %usage|%cpu0/%cpu1"
+	format = "CPU %usage|%cpu0/%cpu1/%cpu2/%cpu3"
 	degraded_threshold = 30
 }
 
