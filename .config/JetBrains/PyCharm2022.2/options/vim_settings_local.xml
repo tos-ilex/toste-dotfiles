@@ -1,0 +1,46 @@
+<application>
+  <component name="VimHistorySettings">
+    <history>
+      <history-cmd>
+        <entry encoding="base64">cQ==</entry>
+      </history-cmd>
+    </history>
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <filemarks>
+      <file name="$USER_HOME$/zvoove/saas/k8s/promitor/helmfile.yaml" timestamp="1664059650444">
+        <mark key="'" line="0" column="0" />
+        <mark key="[" line="30" column="14" />
+        <mark key="]" line="30" column="27" />
+        <mark key="^" line="30" column="14" />
+        <mark key="." line="30" column="14" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="0" column="0" filename="$USER_HOME$/zvoove/saas/k8s/promitor/helmfile.yaml" />
+    </jumps>
+  </component>
+  <component name="VimRegisterSettings">
+    <registers>
+      <register name="0" type="4">
+        <text encoding="base64">c2VydmljZU1vbml0b3I=</text>
+      </register>
+      <register name="&quot;" type="4">
+        <text encoding="base64">c2VydmljZU1vbml0b3I=</text>
+      </register>
+      <register name=":" type="4">
+        <text encoding="base64">cQ==</text>
+      </register>
+      <register name="." type="4">
+        <text encoding="base64" />
+      </register>
+    </registers>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-dir encoding="base64">MQ==</last-dir>
+      <show-last encoding="base64">ZmFsc2U=</show-last>
+    </search>
+  </component>
+</application>
