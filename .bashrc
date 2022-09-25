@@ -6,7 +6,9 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
+#PS1='[\u@\h \W]\$ '
+PS1='\[\e[0;32m\][\u@\h \W]\$ \[\e[0m\]'
+
 
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     ssh-agent -t 1h > "$XDG_RUNTIME_DIR/ssh-agent.env"
@@ -15,7 +17,7 @@ if [[ ! -f "$SSH_AUTH_SOCK" ]]; then
     source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
 fi
 
-PATH=$PATH:~/scripts
+PATH=$PATH:~/scripts:~/.local/bin
 
 alias gs="git status"
 alias gco="git add . && git commit"
