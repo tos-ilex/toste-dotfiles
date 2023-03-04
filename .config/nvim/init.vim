@@ -8,6 +8,7 @@ nnoremap <C-d> :tabn<CR>
 nnoremap <C-a> :tabp<CR>
 nnoremap <C-k><C-w> :tabo<CR>
 nnoremap <C-s> :w<CR>
+nnoremap <C-c> "+y<CR>
 
 " run NERDTree with vim
 autocmd VimEnter * NERDTree | wincmd p
