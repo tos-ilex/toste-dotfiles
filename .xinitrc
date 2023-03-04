@@ -34,7 +34,7 @@ fi
 
 ~/.fehbg &
 
-picom -b
+~/scripts/init_monitor.sh
 
 exec i3
 
