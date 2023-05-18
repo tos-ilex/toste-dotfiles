@@ -34,7 +34,7 @@ fi
 
 ~/.fehbg &
 
-~/scripts/init_monitor.sh
+/home/timo/scripts/init_monitor.sh
 
 exec i3
 
