@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+kubectl config use-context k3d-zvoove-core
+az acr login -n acrzvoovesaasdev
+skaffold dev --cache-artifacts=false

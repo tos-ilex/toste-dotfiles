@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+kubectl config use-context k3d-zvoove-core
+
+docker build ../sso/identity -t zvoovesso:local
+
+az acr login -n acrzvoovesaasdev
+skaffold dev --cache-artifacts=false -p sso-local
