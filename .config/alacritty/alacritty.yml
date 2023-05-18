@@ -1,15 +1,15 @@
 font:
   normal:
-    family: Iosevka Term
+    family: Iosevka Nerd Font
     style: Regular
   bold:
-    family: Iosevka Term
+    family: Iosevka Nerd Font
     style: Bold
   italic:
-    family: Iosevka Term
+    family: Iosevka Nerd Font
     style: Italic
   bold_italic:
-    family: Iosevka Term
+    family: Iosevka Nerd Font
     style: Bold Italic
 key_bindings:
   - key: 5
@@ -29,7 +29,7 @@ colors:
     green: '0x50fa7b'
     yellow: '0xeffa78'
     blue: '0xbd93f9'
-    magenta: '0xff79c6'
+    magenta: '0xff79ae'
     cyan: '0x8d79ba'
     white: '0xbfbfbf'
   bright:
@@ -38,7 +38,7 @@ colors:
     green: '0x5af78e'
     yellow: '0xeaf08d'
     blue: '0xcaa9fa'
-    magenta: '0xff92d0'
+    magenta: '0xf74d90'
     cyan: '0xaa91e3'
     white: '0xe6e6e6'
   dim:
@@ -47,6 +47,6 @@ colors:
     green: '0x049f2b'
     yellow: '0xa3b106'
     blue: '0x530aba'
-    magenta: '0xbb006b'
+    magenta: '0xfa93bc'
     cyan: '0x433364'
     white: '0x5f5f5f'
