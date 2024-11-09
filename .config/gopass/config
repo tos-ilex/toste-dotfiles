@@ -1,0 +1,21 @@
+[mounts]
+	path = /home/timo/.local/share/gopass/stores/root
+[core]
+	parsing = true
+	cliptimeout = 45
+	notifications = true
+	nopager = false
+	exportkeys = true
+	autoimport = false
+[age]
+	usekeychain = false
+[mounts "core-gopass"]
+	path = /home/timo/.local/share/gopass/stores/core-gopass
+[mounts "private"]
+	path = /home/timo/.local/share/gopass/stores/private
+[recipients "core-gopass"]
+	hash = af956d7d71b90a2d110fce828a343a0b6a25df20d8640c5d766720ee81417c52
+[show]
+	safecontent = false
+[generate]
+	autoclip = false

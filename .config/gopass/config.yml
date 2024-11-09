@@ -1,0 +1,14 @@
+autoclip: false
+autoimport: false
+cliptimeout: 45
+exportkeys: true
+nopager: false
+notifications: true
+parsing: true
+path: /home/timo/.local/share/gopass/stores/root
+safecontent: false
+mounts:
+    core-gopass: /home/timo/.local/share/gopass/stores/core-gopass
+    private: /home/timo/.local/share/gopass/stores/private
+    saas: /home/timo/.local/share/gopass/stores/saas
+keychain: false

@@ -17,7 +17,7 @@ if [[ ! -f "$SSH_AUTH_SOCK" ]]; then
     source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
 fi
 
-PATH=$PATH:~/scripts:~/.local/bin:~/go/bin
+PATH=$PATH:~/scripts:~/.local/bin:~/go/bin:~/.dotnet/tools
 
 alias gs="git status"
 alias gco="git add . && git commit"
@@ -29,3 +29,4 @@ alias gfrompc="git fetch && git rebase origin/main"
 alias kubectx="kubectl config use-context"
 
 export EDITOR=nvim
+export ASPNETCORE_ENVIRONMENT=Local

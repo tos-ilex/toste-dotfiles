@@ -1,0 +1,162 @@
+k9s:
+  refreshRate: 2
+  maxConnRetry: 5
+  enableMouse: false
+  headless: false
+  logoless: false
+  crumbsless: false
+  readOnly: false
+  noExitOnCtrlC: false
+  noIcons: false
+  skipLatestRevCheck: false
+  logger:
+    tail: 100
+    buffer: 5000
+    sinceSeconds: 60
+    fullScreenLogs: false
+    textWrap: false
+    showTime: false
+  currentContext: k3d-zvoove-core
+  currentCluster: k3d-zvoove-core
+  clusters:
+    k3d-zvoove-core:
+      namespace:
+        active: all
+        lockFavorites: false
+        favorites:
+        - all
+        - default
+      view:
+        active: pods
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.35.0
+        command: []
+        args: []
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+        labels: {}
+      portForwardAddress: localhost
+    zvoove-saas-dev:
+      namespace:
+        active: grafana-agent
+        lockFavorites: false
+        favorites:
+        - kube-system
+        - grafana-agent
+        - ingress-nginx
+        - monitoring
+        - core
+        - communication
+        - deb27
+        - default
+        - sso
+      view:
+        active: pod
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.35.0
+        command: []
+        args: []
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+        labels: {}
+      portForwardAddress: localhost
+    zvoove-saas-predev:
+      namespace:
+        active: harbor
+        lockFavorites: false
+        favorites:
+        - default
+        - harbor
+        - kube-system
+        - aad-pod-identity
+        - velero
+        - tigera-operator
+        - monitoring
+        - sso
+        - core
+      view:
+        active: pod
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.35.0
+        command: []
+        args: []
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+        labels: {}
+      portForwardAddress: localhost
+    zvoove-saas-prod:
+      namespace:
+        active: core
+        lockFavorites: false
+        favorites:
+        - debshowroom
+        - harbor
+        - kubecost
+        - core
+        - all
+        - default
+        - monitoring
+        - deb502927
+        - sso
+      view:
+        active: pod
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.35.0
+        command: []
+        args: []
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+        labels: {}
+      portForwardAddress: localhost
+    zvoove-saas-staging:
+      namespace:
+        active: core
+        lockFavorites: false
+        favorites:
+        - default
+        - harbor
+        - core
+        - pdl-de-db-access
+        - all
+        - kured
+        - reflector
+        - sso
+        - kubecost
+      view:
+        active: pod
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.35.0
+        command: []
+        args: []
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+        labels: {}
+      portForwardAddress: localhost
+  thresholds:
+    cpu:
+      critical: 90
+      warn: 70
+    memory:
+      critical: 90
+      warn: 70
+  screenDumpDir: /tmp/k9s-screens-timo
